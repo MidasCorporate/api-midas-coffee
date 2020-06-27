@@ -5,7 +5,14 @@
   "repository": "https://github.com/MidasCorporate/api-midas-coffee.git",
   "author": "alessandro-silva <alessandro.rds03@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0"
   }
 }
