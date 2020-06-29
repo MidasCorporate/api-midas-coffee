@@ -2,6 +2,7 @@ import { Router } from 'express';
 
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
+import ProductController from './app/controllers/ProductController';
 
 import authMiddleware from './app/middlewares/auth';
 
@@ -14,5 +15,9 @@ routes.use(authMiddleware);
 
 routes.get('/users', UserController.index);
 routes.put('/users', UserController.update);
+
+routes.get('/products', ProductController.index);
+routes.post('/products', ProductController.store);
+routes.put('/products', ProductController.update);
 
 export default routes;
