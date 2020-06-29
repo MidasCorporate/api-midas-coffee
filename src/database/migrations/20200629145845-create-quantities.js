@@ -15,7 +15,7 @@ module.exports = {
         allowNull: true,
       },
       token: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       status: {
